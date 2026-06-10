@@ -91,11 +91,19 @@ border-bottom: 4px solid var(--verde);
     .botao:first-child {}
 }
 
+.contador {
+    font-size: 20px;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
+@mediascreen and (min-width: 768px) {
+    .botoes {
+        display:flex
+    }
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
